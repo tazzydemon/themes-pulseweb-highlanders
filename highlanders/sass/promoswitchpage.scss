@@ -1,0 +1,57 @@
+.promo-form {
+  position:absolute;
+  top:32%;//36%;
+  left:1.2%;
+  z-index:10;
+  label{
+    display:inline
+    }
+  input[type="text"],input[type="email"]{
+    width:65%;
+    float:right;
+    }
+  label{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight:300;
+    color:#ffffff;
+    }
+  .field{
+    margin-top:14px
+    }
+  form .custom.checkbox{
+    width:30px;
+    height:30px;
+    margin-right: 20px;
+    &.checked:before{
+      content: "\2714";
+      color: #222;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-top: 2px;
+      margin-left: 0px;
+      font-size: 30px;
+      }
+    }
+  }
+.Actions{
+  position: fixed;
+  right: 8%;
+  top: 46%;//60%;
+  }
+.parsley-required{
+  color: #F7DEDE;
+  font-size:18px;
+  }
+.parsley-errors-list.filled, .parsley-errors-list.message, .required.message.filled, .required.message.message {
+  position: absolute;
+  top: 65px;
+  left: 274px;
+}
+.checkbox{
+  .parsley-errors-list.filled, .parsley-errors-list.message, .required.message.filled, .required.message.message{
+    left:13px;
+    }
+
+  }

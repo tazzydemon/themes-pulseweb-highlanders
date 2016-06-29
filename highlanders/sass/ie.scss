@@ -1,0 +1,41 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+
+
+#HeroPage a.ctabutton-text, a.ctabutton-text {
+   /* IE8+ - must be on one line, unfortunately */
+//   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
+
+   /* IE6 and 7 */
+//   filter: progid:DXImageTransform.Microsoft.Matrix(
+//            M11=1,
+//            M12=0,
+//            M21=0,
+//            M22=1,
+//            SizingMethod='auto expand');
+
+
+   /*
+    * To make the transform-origin be the middle of
+    * the object.    Note: These numbers
+    * are approximations.  For more accurate results,
+    * use Internet Explorer with this tool.
+    */
+//   margin-left: -50%;
+//   margin-top: -50%;
+  left:0%;
+  top:auto;
+
+}
+
+#Page .green-cta-content, #HeroPage .green-cta-content {
+  .white-cta-panel {
+    .bg.white{
+      text-align: center; height: 400px;
+      }
+    }
+  }
